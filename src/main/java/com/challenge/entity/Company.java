@@ -36,7 +36,7 @@ public class Company {
 
     @NotNull
     @CreatedDate
-    private LocalDateTime createAt;
+    private LocalDateTime createdAt;
 
     @OneToMany(mappedBy = "id.company")
     private List<Candidate> candidates;

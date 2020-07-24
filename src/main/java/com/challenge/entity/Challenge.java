@@ -36,7 +36,7 @@ public class Challenge {
 
     @NotNull
     @CreatedDate
-    private LocalDateTime createAt;
+    private LocalDateTime createdAt;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy="challenge")
     private List<Acceleration> accelerations;
